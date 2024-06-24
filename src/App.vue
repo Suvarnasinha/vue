@@ -3,8 +3,8 @@
     <header>
       <nav>
         <ul>
-          <li><router-link to="/users">Users</router-link></li>
-          <li><router-link to="/albums">Albums</router-link></li>
+          <li><router-link to="/">Users</router-link></li>
+          <li><router-link to="/album">Albums</router-link></li>
         </ul>
       </nav>
     </header>
@@ -15,11 +15,9 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 </script>
-
 <style scoped>
 header {
   background-color: #333;
-  color: white;
   padding: 10px 0;
 }
 
@@ -32,16 +30,12 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 10px;
+  
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
-}
-
-nav ul li a:hover {
-  background-color: #555;
 }
 </style>
